@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Venta de Carros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="contacto-titulo">Contáctanos</h1>
+    <nav>
+      <a href="catalogo.html">Volver al Catálogo</a>
+      <a href="acerca.html">Acerca de</a>
+      <a href="index.html" onclick="logout()">Cerrar Sesión</a>
+    </nav>
+  </header>
+  <section class="contacto">
+  </section>
+   <div class ="container">
+      <div class="horario">
+        <h2>Horario de Atención</h2>
+        <p class="dias">Lunes a Viernes: 9:00 am - 6:00 pm</p>
+        <p class="dias">Sabados: 10:00 am - 4:00 pm</p>
+        <p class="dias">Domingos: Cerrado</p>
+      </div>
+    </div>
+  
+    <form class="contacto-form" onsubmit="return validarContacto()">
+      <input type="text" id="nombreContacto" placeholder="Tu nombre" />
+      <input type="email" id="correoContacto" placeholder="Tu correo"/>
+      <input type="telefono" id="telefonoContacto" placeholder="Tu telefono"/>
+      
+     
+    
+      <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+      <button type="submit">Enviar</button>
+
+  </form>
+
+
+  <footer>
+    &copy; 2025 Venta de Carros. Todos los derechos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
